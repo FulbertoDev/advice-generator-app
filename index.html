@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Advice generator app</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+        * {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        #d {
+            /* Grayish Blue */
+            color: #4e5d73;
+            /* Dark Grayish Blue*/
+            color: #323a49;
+            /* Dark Blue */
+            color: #1f2632;
+            /* Light Cyan */
+            color: #cee3e9;
+            /* Neon Green */
+            color: rgba(82,255,168,1);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="hidden">Frontend Mentor | Advice generator app</h1>
+    <main>
+        <div class="w-screen h-screen bg-[#1f2632] flex justify-center items-center font-extrabold">
+            <div class="w-2/6 h-fit bg-[#323a49] px-8 pt-8 rounded-lg flex flex-col items-center">
+                <span id="advice-id" class="uppercase text-[#52ffa8] text-sm"></span>
+                <q id="advice-quote-text" class="text-2xl text-[#cee3e9] text-center my-6"></q>
+                <img alt="divider" src="images/pattern-divider-desktop.svg" class="hidden md:block" />
+                <img alt="divider" src="images/pattern-divider-mobile.svg" class="block md:hidden" />
+                <button id="action-button"
+                    class="bg-[#52ffa8] rounded-full h-12 w-12 translate-y-1/2 flex justify-center items-center hover:drop-shadow-[0_0px_10px_rgba(82,255,168,1)] hover:drop-shadow-[0_0px_5px_rgba(82,255,168,1)] hover:drop-shadow-[0_0px_30px_rgba(82,255,168,1)]">
+                    <img id="dice" alt="dice" src="images/icon-dice.svg" class="h-6 w-6" />
+                </button>
+            </div>
+        </div>
+    </main>
+    <script src="assets/index.js"></script>
+</body>
+
+</html>
